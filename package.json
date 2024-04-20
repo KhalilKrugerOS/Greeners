@@ -11,16 +11,20 @@
   "dependencies": {
     "bcrypt": "^5.1.1",
     "mongodb": "^6.5.0",
-    "mongoose": "^8.2.2",
+    "mongoose": "^8.3.2",
     "next": "^14.2.2",
     "next-auth": "^4.24.7",
+    "npm": "^10.5.2",
     "pg": "^8.11.3",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@types/node": "20.12.7",
+    "@types/react": "18.2.79",
     "autoprefixer": "^10.0.1",
     "postcss": "^8",
-    "tailwindcss": "^3.3.0"
+    "tailwindcss": "^3.3.0",
+    "typescript": "5.4.5"
   }
 }
