@@ -29,7 +29,7 @@ const handler = NextAuth({
           await User.create({
             email: profile.email,
             username: profile.name.replace(" ", "").toLowerCase(),
-            image: profile.picture,
+            picture: profile.picture,
           });
         }
         return true;
@@ -40,5 +40,7 @@ const handler = NextAuth({
     },
   },
 });
+
+export const authSession = handler.session;
 
 export { handler as GET, handler as POST };
