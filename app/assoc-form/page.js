@@ -22,10 +22,12 @@ const CreatePrompt = () => {
             const response = await fetch("/api/prompt/new", {
                 method: "POST",
                 body: JSON.stringify({
-                    mail: post.mail,
+
                     userId: session?.user.id,
-                    cname: post.cname,
-                    number: post.number,
+                    assocName: post.assocName,
+                    desc: post.desc,
+                    mail: post.mail,
+                    password: post.password,
                 }),
             });
             if (response.ok) {
@@ -40,7 +42,7 @@ const CreatePrompt = () => {
 
     return (
         <AssocForm
-            type="Add"
+            type="Soumettre"
             post={post}
             setPost={setPost}
             submitting={submitting}
