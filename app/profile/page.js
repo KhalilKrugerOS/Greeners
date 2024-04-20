@@ -21,10 +21,11 @@ const page = () => {
 
   const handleEdit = (post) => { };
   const handleDelete = (post) => { };
-
+  const userId = session?.user.id;
   return (
     <Profile
       data={posts}
+      id={userId}
       name="My"
       desc={"Your Profile Page"}
       handleEdit={handleEdit}
