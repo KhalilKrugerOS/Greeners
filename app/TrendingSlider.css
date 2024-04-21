@@ -1,0 +1,119 @@
+.trending-slider {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    width: 1600px;
+  }
+  
+  .trending-slider-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:black;
+  }
+  
+  .trending-slider-wrapper {
+    position: relative;
+  }
+  
+  .slide-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #3498db;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    z-index: 2;
+  }
+  
+  .left {
+    left: 10px;
+  }
+  
+  .right {
+    right: 10px;
+  }
+  
+  .trending-slider-content {
+    white-space: nowrap;
+    transition: transform 60s ease;
+  }
+  
+  .trending-slider-card {
+    display: inline-block;
+    width: 1600px;
+    box-sizing: border-box;
+    opacity: 0.5;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    height: 300px;
+    background-color: beige;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optionnel : Ajoute un effet d'ombre pour un style plus profond */
+  
+  }
+  
+  .trending-slider-card.active {
+    opacity: 1;
+  }
+  
+  .card-image-container {
+    padding: 10px;
+    display: inline-block;
+  
+  
+    
+    
+  }
+  
+  
+  .card-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .card-info {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .card-name {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    width: 100px;
+    color: black;
+    text-decoration: underline;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  
+  
+  
+  .card-story {
+    font-size: 1rem; /* Taille du texte appropriée */
+    color: #333; /* Couleur du texte */
+    margin: 10px 0; /* Marge autour du texte pour le détacher visuellement */
+    text-align: justify; /* Justifie le texte, ce qui peut aider à remplir les lignes de manière plus uniforme */
+    overflow-wrap: break-word; /* S'assure que les mots longs ne débordent pas du conteneur */
+    word-wrap: break-word; /* S'assure que les mots longs ne débordent pas du conteneur (ancienne propriété pour les navigateurs plus anciens) */
+  }
+  .card-ligne2 {
+    font-size: 1rem; /* Taille du texte appropriée */
+    color: #333; /* Couleur du texte */
+    margin: 10px 0; /* Marge autour du texte pour le détacher visuellement */
+    text-align: justify; /* Justifie le texte, ce qui peut aider à remplir les lignes de manière plus uniforme */
+    overflow-wrap: break-word; /* S'assure que les mots longs ne débordent pas du conteneur */
+    word-wrap: break-word; /* S'assure que les mots longs ne débordent pas du conteneur (ancienne propriété pour les navigateurs plus anciens) */
+  }
+  
