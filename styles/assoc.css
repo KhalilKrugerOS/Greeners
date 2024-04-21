@@ -1,0 +1,37 @@
+.white_text1{
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.white_text2{
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.black_text{
+    color: #000;
+    font-family: Lato;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.blue_text{
+    color: #0078B0;
+    font-family: Lato;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
