@@ -1,35 +1,32 @@
 import Link from "next/link";
-//openssl rand -base64 32import Background from '../images/image37.png';
+import React from 'react';
 
-// var handsImage = {
-//     backgroundImage: "url(" + { Background } + ")"
-// };
+import '/styles/assoc.css';
 const AssocForm = ({ type, post, setPost, submitting, handleSubmit }) => {
     return (
-        <section className="w-full max-w-full flex-start flex-col">
-            <head className="head_text text_right">
-                <span className="green_gradient">Vous avez déjà un compte d’organistaion  ?  </span>
+        <section style={{ backgroundImage: `url(require("images/image37.png"))`}} className="justify-center">
+            <head >
+                <span className="black_text text_left">Vous avez déjà un compte d’organistaion  ?  </span>
             </head>
-            <Link href="/Greeners-main%20(copy)/public"
-                className="text-gray-500 text-sm hover:text-red-400">
+            <Link href="/"
+                className="blue_text">
                 Connectez -vous
             </Link>
-            <div className="head_text text_right">
-                <div className={""}>
+            <div className="flex justify-center">
+                <div className="flex-col">
                     <h2>
                         Ajouter un compte
                     </h2>
-                    <p>Ajouter une campagne en quelques minutes</p>
-                    <p>Suivi en temps réel des contributions</p>
-                    <p>Sécurité et conformité garanties</p>
+                    <p className="white_text2">Ajouter une campagne en quelques minutes</p>
+                    <p className="white_text2">Suivi en temps réel des contributions</p>
+                    <p className="white_text2">Sécurité et conformité garanties</p>
                 </div>
-                <div className="right_card">
+                <div className="flex-col">
                     <form
                         onSubmit={handleSubmit}
-                        className="mt-10 w-full max-w-2xl flex flex-col gap-7 glassmorphism"
                     >
 
-                        <label className="font-satoshi font-semibold text-base text-gray-700">
+                        <label className="white_text1">
                             Nom de l'organisation
                         </label>
                         <input
@@ -50,7 +47,7 @@ const AssocForm = ({ type, post, setPost, submitting, handleSubmit }) => {
                                 setPost({...post, desc: e.target.value});
                             }}
                             className="form_textarea"
-                            placeholder="+216"
+                            placeholder="..."
                             required
                         />
                         <label className="font-satoshi font-semibold text-base text-gray-700">
@@ -85,7 +82,7 @@ const AssocForm = ({ type, post, setPost, submitting, handleSubmit }) => {
                             <button
                                 type="submit"
                                 disabled={submitting}
-                                className="px-5 py-1.5 rounded-full bg-green-400 text-white font-inter font-medium"
+                                className="buttom_style"
                             >
                                 {submitting ? `${type}...` : type}
                             </button>
